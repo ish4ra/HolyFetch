@@ -6,6 +6,7 @@ A lightweight TempleOS system information tool written entirely in HolyC. Inspir
 
 - TempleOS-native HolyC implementation
 - Displays OS and x86-64 architecture
+- Displays CPU brand using TempleOS CPUID support
 - Displays detected logical CPU count
 - Displays physical memory size
 - Displays uptime
@@ -38,7 +39,6 @@ The implementation is source-checked against TempleOS interfaces. Final v0.1.0 r
 ## Roadmap
 
 - Verify output on a clean TempleOS installation
-- Add CPU brand information using TempleOS CPUID support
 - Refine the TempleOS-style logo and layout
 
 ## License
