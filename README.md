@@ -5,12 +5,12 @@ A lightweight TempleOS system information tool written entirely in HolyC. Inspir
 ## Features
 
 - TempleOS-native HolyC implementation
-- Displays OS and kernel information
-- Displays CPU information
-- Displays memory usage
+- Displays OS and x86-64 architecture
+- Displays detected logical CPU count
+- Displays physical memory size
 - Displays uptime
-- Displays current graphics resolution
-- Compact TempleOS-style output
+- Displays the native TempleOS graphics resolution
+- Compact DolDoc color formatting
 - No external dependencies
 
 ## Usage
@@ -23,16 +23,23 @@ Copy `HolyFetch.HC` into TempleOS and run:
 
 The script runs automatically after loading.
 
+## Requirements
+
+HolyFetch targets the final TempleOS environment and uses TempleOS kernel globals and HolyC directly. HolyC is compiled inside TempleOS rather than with a conventional host C compiler.
+
 ## Version
 
 Current development version: **v0.1.0**
 
+## Status
+
+The implementation is source-checked against TempleOS interfaces. Final v0.1.0 release is pending an in-TempleOS runtime test.
+
 ## Roadmap
 
-- Verify hardware information across TempleOS-compatible systems
-- Improve memory reporting
-- Add cleaner logo/output formatting
-- Add optional compact output mode
+- Verify output on a clean TempleOS installation
+- Add CPU brand information using TempleOS CPUID support
+- Refine the TempleOS-style logo and layout
 
 ## License
 
