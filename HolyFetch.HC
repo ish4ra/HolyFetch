@@ -44,7 +44,7 @@ U0 HolyFetch()
   I64 days=uptime_s/86400;
   I64 hours=(uptime_s%86400)/3600;
   I64 mins=(uptime_s%3600)/60;
-  I64 memory_mb=mem_physical_space>>20;
+  I64 memory_mb=MemBIOSTotal()>>20;
 
   HolyFetchCPUBrand(cpu_brand);
   HolyFetchLogo();
