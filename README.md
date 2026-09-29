@@ -8,7 +8,7 @@ A lightweight TempleOS system information tool written entirely in HolyC. Inspir
 - Displays OS and x86-64 architecture
 - Displays CPU brand using TempleOS CPUID support
 - Displays detected logical CPU count
-- Displays physical memory size
+- Displays physical memory size using TempleOS BIOS memory reporting
 - Displays uptime
 - Displays the native TempleOS graphics resolution
 - Compact DolDoc color formatting
@@ -34,12 +34,13 @@ Current development version: **v0.1.0**
 
 ## Status
 
-The implementation is source-checked against TempleOS interfaces. Final v0.1.0 release is pending an in-TempleOS runtime test.
+HolyFetch has now been compiled and executed successfully inside TempleOS running under QEMU. The first runtime test exposed an incorrect physical-memory calculation; the implementation now uses TempleOS `MemBIOSTotal()` for memory reporting and is awaiting one verification run before the v0.1.0 release is finalized.
 
 ## Roadmap
 
-- Verify output on a clean TempleOS installation
+- Verify the corrected memory value in TempleOS/QEMU
 - Refine the TempleOS-style logo and layout
+- Finalize the v0.1.0 release
 
 ## License
 
