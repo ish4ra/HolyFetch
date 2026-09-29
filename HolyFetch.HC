@@ -51,13 +51,13 @@ U0 HolyFetch()
 
   "$$YELLOW$$HolyFetch$$FG$$ v%s\n",HOLYFETCH_VERSION;
   "$$YELLOW$$----------------$$FG$$\n";
-  "$$LTBLUE$$OS          $$FG$$TempleOS\n";
-  "$$LTBLUE$$Architecture$$FG$$x86-64\n";
-  "$$LTBLUE$$CPU         $$FG$$%s\n",cpu_brand;
-  "$$LTBLUE$$CPU cores   $$FG$$%d logical\n",mp_cnt;
-  "$$LTBLUE$$Memory      $$FG$$%d MiB physical\n",memory_mb;
-  "$$LTBLUE$$Uptime      $$FG$$%dd %dh %dm\n",days,hours,mins;
-  "$$LTBLUE$$Resolution  $$FG$$%dx%d\n",GR_WIDTH,GR_HEIGHT;
+  "$$LTBLUE$$OS            $$FG$$TempleOS\n";
+  "$$LTBLUE$$Architecture  $$FG$$x86-64\n";
+  "$$LTBLUE$$CPU           $$FG$$%s\n",cpu_brand;
+  "$$LTBLUE$$CPU cores     $$FG$$%d logical\n",mp_cnt;
+  "$$LTBLUE$$Memory        $$FG$$%d MiB physical\n",memory_mb;
+  "$$LTBLUE$$Uptime        $$FG$$%dd %dh %dm\n",days,hours,mins;
+  "$$LTBLUE$$Resolution    $$FG$$%dx%d\n",GR_WIDTH,GR_HEIGHT;
 }
 
 HolyFetch;
